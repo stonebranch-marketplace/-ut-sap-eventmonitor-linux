@@ -69,9 +69,11 @@ Please refer to the Universal Agent Installation Manual [3] for details.
 Go to “All Tasks” and load via the Import functionality the Universal Task configuration XML files into the Controller. 
 
 Image 1 
+
 ![](images/image1.png)
    
 Image 2  
+
 ![](images/image2.png)
 
 # 5	Universal Task Configuration
@@ -79,6 +81,7 @@ Image 2
 **1.	Activate: Resolvable Credentials in Universal Automation Center:**
 
 Image 3
+
 ![](images/image3.png)
 
 **2.	Fill Out the Universal Task for each Data Service Job to be scheduled:**
@@ -86,17 +89,20 @@ In the example the SAP Event: UAC_TEST with Parameter: UAC is monitored.
 If the Event occurs in the SAP Event history table with status “NEW” the Task “Sleep 600” is launched and the Event is confirmed in SAP.
 
 Image 4
+
 ![](images/image4.png)
 
 Fill out or select the required Credentials for SAP and the Universal Controller cli (oms credentials)
 Example: Universal Controller cli (oms credentials) credentials:
 
 Image 5
+
 ![](images/image5.png)
 
 Example: SAP Credentials:
 
 Image 6
+
 ![](images/image6.png)
 
 # 6 Universal Tasks for SAP Event monitoring
@@ -104,11 +110,13 @@ Image 6
 TThe following chapter describes the provided SAP Event monitoring UT. 
 
 Image 7
+
 ![](images/image7.png)
 
 Field Description
 
 Image 8
+
 ![](images/image8.png)
 
 **Event configuration in SAP**
@@ -116,6 +124,7 @@ Image 8
 The SAP Task Monitor scans for Events in the SAP Event history. An Event only shows up in the Event history if an appropriate event criteria profile has been set-up in SAP by using transaction SM62. (Note: optionally a criteria profile can also be set-up via an SAP Task of command group “Set CM Profile” in the Universal Controller). The following screen shows an example of the set-up in SAP using SM62:
 
 Image 9
+
 ![](images/image9.png)
 
 **Event History table:**
@@ -124,12 +133,14 @@ The following provides and example of the Event history table in SAP (SM62).
 Only Event showing up here can trigger the SAP Event Monitor UT.
 
 Image 10
+
 ![](images/image10.png)
 
 # 6.1	Task Monitor Trigger mode
 You can create a Task Monitor trigger out of this task by adding an action to the Universal Task, which re-started the task in case of success.
 
 Image 11
+
 ![](images/image11.png)
 
 # 7	Test Cases
@@ -137,9 +148,11 @@ Image 11
 The following basic test cases has been performed:
 
 Image 12
+
 ![](images/image12.png)
 
 Image 13
+
 ![](images/image13.png)
 
 # 8	Document References
