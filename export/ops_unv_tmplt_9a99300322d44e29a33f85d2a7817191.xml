@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2018-06-28 17:46:51" unload_format="1" unload_table="ops_unv_tmplt" unload_version="6.4.5.0"><ops_unv_tmplt action="INSERT_OR_UPDATE"><credentials_var/><broadcast_cluster/><agent/><use_common_script>false</use_common_script><credentials/><icon_filesize>1349</icon_filesize><icon>iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAAGvZ15GAAAACXBIWXMAAAsSAAALEgHS3X78AAAE90lEQVRYw+1YbUxTVxh+b1u+yqXQoqN8OD5mwS0CARnbGHOZM9GwkegWYQSTJZv+0Jhtf/ZHF00IOudw2VQGP8jC4gjRRQkGhw5QUSAOIjilOhAoUGhtoS0tpb29vb3vftymX1Rh0Lkl9k3Te+75eN7nPOc957y5BCKCt/FgkQkA4MV2vVcdetj+DhUiCgAg5eB1rnn82DsAQCyGJ5bnsXrc+s2I1fU+uVUiYI3Wya0Sr178ufmUg38CwN2v3ooRCpbtcbHxYBnGA4CTQ+ZJMwMA8jk7V9uuopqnrFEXVW5lam+rOGV6xow1XdOIKDvR56lY4DgFdnaB6eQvXjzMuYqcEkflJvLCNCJy/54FRARE3N06hYif/j4trRvqf2zFReYVi6e7ptCfEYjoik5XjHYNGwrTxf+VmMtyFzBvzxRIwD3655jbBvvKIPanRriBburoBiXVWSgWCohrM3RJn/GFMF7b6+ImNXVkeOHe27EAoGfYiyrbKYXFBaErWut7YlUNziEii1h6XUM2KMgGBSLWPDAi4prGcWcENigQ0UQ5uIKfSAKAmjszjYN65TydERN2ZXe63ymUNY31qy1D+zc+TSPCalNPzOYlkNb5BVlFt9+ujw6/+XzGUcCAgho910DOvfajwrqy8eVJ4dEhhBvo+OhKgGoySQ7FDbRAO87mRhdJQ2co9tDDhQtq6s5mSQhBZHXq8mJCfsoWIeCEjd07YNLYWG7Iqcyo9+JCfTX6dZOoSBp6/OH8xDxjsthpyp5C8hMjedvFfD7DJEbyOtTUG+KQB+/G0pSdpux1WWT5unA/YkfxAADyowU7rj++PGE6IosEAASof00MNAMAB3pnyjq1AAAUXZ0t2pkU4TtP7qCU1g0pjTRXbp8wI6LGbD/co0HEDy5Peh6pzaOmJ17aAJB65j6HqziQ6eNpQG3JiReWNY2xLH74sqTkFbF/5Tm8S/JZHw/f3VB6ZgyyE32NA1p8sjkZySq6wwW87ETyjwmTX3/HitfvyolbOiDtFG0H6Bqi/KPsyNiVE2e2MsJwPo8gggdbEOhfW/7/3cyChIKEgoSefn0404pxa9WI5Vm6P50ZVeSRgvgSsiOYWed1FUZAWgTfxuIYxQacB8knKjcIyxLDllCIYdjMcGguEEcKfG/RwTmm8KYOAPYkR1Rli7hKlcWRe01HsVi4JrSlwE9OoTA7tnXrtTavKf2QLfo4OWJZS8YyjrO5Io7Nvl79z+MLXH1cKE9DswCQJw51sQGABCG/coPws34DY3NPQHheCQD70siTeeJUkt9RIM5oVXNNZzZJPnkpcgn1vBKhe/ove3wzH62F+bpfl/TLqKR+RGthuMotzcqbUwtc+YtubfEV9+ea969Ol7Sr7uts3GufxiqpH6kfMuLyzItQdf9Mcq2c++39bfLcAwPLult7p50MzskNybXy8kvjrqbP2/18AWIc7KEbqga5Hv+JeV2utX2aloeG5t0ZV0eMbY+MRtpRujF2myx6ySBFBFfutv77u1yhcsu6j7JiV7XtCTuTFskbnDYXpccUpcdwlUYr03J/tjxfyr3uafzrlmLONaR1b3ba2gjPTJJvoSq2p5bmxgUg/ai5pfy2TbGa/Xy0WFb2avw8xXQOG0Thgs3p4lUpFE+G5CeSK6OyM0damp/gPD5YlEaHmSlHMEELEgoSChJa2v4GGKXuJW4/bygAAAAASUVORK5CYII=</icon><icon_date_created>2017-08-07 09:26:09</icon_date_created><description>Monitors for SAP Event (SM62) - do not change the name</description><sys_updated_on>2018-06-28 17:40:57</sys_updated_on><agent_var/><icon_filename>Favicon_SAP-01.png</icon_filename><sys_id>9a99300322d44e29a33f85d2a7817191</sys_id><output_return_text/><sys_updated_by>ops.admin</sys_updated_by><variable_prefix>var</variable_prefix><sys_created_on>2017-08-07 09:26:09</sys_created_on><script_windows/><credentials_var_check>false</credentials_var_check><agent_cluster_var>${SAP_LX_AGNT_CLUSTER}</agent_cluster_var><agent_cluster_var_check>true</agent_cluster_var_check><agent_var_check>false</agent_var_check><sys_created_by>ops.admin</sys_created_by><output_return_nline>100</output_return_nline><output_return_sline>1</output_return_sline><exit_code_text/><runtime_dir/><output_type>1</output_type><desktop_interact>false</desktop_interact><output_return_type>1</output_return_type><script_unix>#!/bin/bash
+
+# Stonebranch 2018
+# Task to Monitor for SAP Events (SM62)
+# use standard SAP XBP Interface function to read and confirm SAP Events 
+#
+#
+# Version 1.0, 10.08.2017, Nils Buer
+#         2.0. 13.06.2017, Nils Buer update for dest connection
+#         2.1  20.06.2018, Nils Buer update adjusted to CTK
+#         2.2  21.06.2018, Nils Buer task action added
+#         2.3. 26.06.2018, Nils Buer functions added
+#         2.4. 27.06.2018, Nils Buer wildcard use *
+#         2.5. 28.06.2018, Nils Buer advanced error handling added 
+#
+# Description: 
+# Queries the SAP Event history table for the selected SAP Event &amp; Parameter
+# If the Event is found, it gets confirmed, so that it is not triggered again
+#
+
+
+# Functions
+
+checkerror () {
+
+# checks is usap returns a non zero exit code e.g. saplogon error 202
+
+local exitcode="$1"
+local calledfunction="$2"
+local status="$3"
+local task_name="$4"
+
+if [ "$exitcode" -ne 0 ]; then
+   printf "##ERROR# ###in function $calledfunction exitcode =$exitcode \n" 1&gt;&amp;2
+   exit 1
+fi
+
+# test additional error message that do not throw an error code
+
+if [[ $status = *"No tasks found matching"* ]]; then
+      printf "##ERROR#in function $calledfunction No tasks found matching with name: $task_name \n"  1&gt;&amp;2
+      exit 1
+fi
+
+}
+
+
+
+print_input_variables () {
+
+# Input Variables
+
+printf "##INFO# ### USAP started with loglevel: ${ops_var_level} \n"
+printf "##INFO# ### exec. USAP from: ${ops_var_usapdir} \n"
+printf "##INFO# ### SAP destination: ${ops_var_ashost} \n"
+printf "##INFO# ### SAP Client: ${ops_var_client} \n"
+printf "##INFO# ### SAP User: ${_credentialUser("${ops_var_sapcred}")} \n"
+printf "##INFO# ### SAP Password: ${_credentialPwd("${ops_var_sapcred}")} \n"
+printf "##INFO# ### Event ID: ${ops_var_event_id} \n"
+printf "##INFO# ### Event Parameter: ${ops_var_event_para} \n"
+printf "##INFO# ### Select State: ${ops_var_select_state} \n"
+printf "##INFO# ### Event Creation: ${ops_var_creation_action} \n"
+printf "##INFO# ### Poll Intervall: ${ops_var_poll} \n"
+printf "##INFO# ### OMS host: ${ops_var_omshost} \n"
+printf "##INFO# ### OMS Port: ${ops_var_omsport} \n"
+printf "##INFO# ### OMS User: ${_credentialUser("${ops_var_omscred}")} \n"
+printf "##INFO# ### OMS Password: ${_credentialPwd("${ops_var_omscred}")} \n"
+printf "##INFO# ### OPS cli dir: ${ops_var_opsclidir} \n"
+printf '##INFO# ### Task to launch: ${ops_var_taskname} \n'
+printf " \n"
+printf " \n"
+printf "##INFO# ### Monitoring for SAP EVENT:${ops_var_event_id} and Parameter:${ops_var_event_para} \n"
+
+}
+
+test_dir () {
+
+# checks if a directory exists
+
+if [ -d "$1" ]; then 
+    printf "##INFO# $1 exists. \n"
+else 
+    printf "##ERROR# $1 does not exists. \n"  1&gt;&amp;2
+    exit 1
+fi
+}
+
+check_task_status () {
+
+# checks if the Universal Task is running and has not been forced finished
+
+local task_name="$1"
+local status=""
+status=$(${ops_var_opsclidir}ops-task-status -r OMS -m ${ops_var_omsport}@${ops_var_omshost} -u ${_credentialUser("${ops_var_omscred}")} -p ${_credentialPwd("${ops_var_omscred}")} task-instance-name="$task_name" task-status=running)
+checkerror "$?" "check_task_status"
+
+
+if [[ $status = *"RUNNING"* ]]; then
+   return 0
+else 
+   return 1
+fi
+}
+
+search_for_sap_event () {
+
+# calls the usap command display event_history to query the sap history table
+
+local status=""
+local event_found=""
+local event_parameter="${ops_var_event_para}"
+# If no event parameter or * is specified in UT than set to parameter to \* for search
+if [[ $event_parameter = "" ]] || [[ $event_parameter = "*" ]]; then
+   status=$(usap -dest ${ops_var_ashost} -client ${ops_var_client} -userid ${_credentialUser("${ops_var_sapcred}")} -pwd ${_credentialPwd("${ops_var_sapcred}")} -level ${ops_var_level} -immediate -lang english -level info  -display event_history -event_id ${ops_var_event_id} -event_parm \* -event_select_state ${ops_var_select_state} -event_action ${ops_var_creation_action}) 
+   checkerror "$?" "search_for_sap_event"
+else
+   status=$(usap -dest ${ops_var_ashost} -client ${ops_var_client} -userid ${_credentialUser("${ops_var_sapcred}")} -pwd ${_credentialPwd("${ops_var_sapcred}")} -level ${ops_var_level} -immediate -lang english -level info  -display event_history -event_id ${ops_var_event_id} -event_parm ${event_parameter} -event_select_state ${ops_var_select_state} -event_action ${ops_var_creation_action}) 
+   checkerror "$?" "search_for_sap_event"
+fi
+
+event_found=$(echo $status | awk -F"|" '{if ($11 ~ /N[ ]/) print substr($11,1,1)}')
+
+if [[ $event_found = "N" ]]; then
+   printf "##INFO# EVENT:${ops_var_event_id} and Parameter:${ops_var_event_para} in STATUS $event_found found. \n"
+   return 0
+else 
+   return 1
+fi
+}        
+
+launch_task () {
+
+# calls the cli command ops-task-launch to launch the specified task in the UT
+
+local task_name="$1"
+local status=""
+
+if [[ $task_name = "" ]]; then
+   printf "##INFO# Monitoring Mode, No task to launch specified \n"
+else
+   status=$(${ops_var_opsclidir}ops-task-launch -r OMS -m ${ops_var_omsport}@${ops_var_omshost} -u ${_credentialUser("${ops_var_omscred}")} -p ${_credentialPwd("${ops_var_omscred}")} task-name="$task_name")
+   checkerror "$?" "launch_task" "$status" "$task_name"
+   printf "##INFO# Task launched: $task_name \n"
+fi
+}
+
+
+### Main
+
+printf "##INFO# Directories \n"
+test_dir ${ops_var_usapdir}
+test_dir ${ops_var_opsclidir}
+printf "##INFO# Settings \n"
+print_input_variables
+
+
+while [ 1 ]
+do
+   # test if universal task is still running
+   check_task_status '${ops_task_name}'
+   if [ "$?" -eq 0 ]; then
+      search_for_sap_event
+      if [ "$?" -eq 0 ]; then
+         launch_task '${ops_var_taskname}'
+         exit 0 
+      fi
+   else
+      printf "##ERROR# UT is not running \n" 1&gt;&amp;2
+      exit 1
+   fi
+   sleep  ${ops_var_poll}
+done
+</script_unix><output_return_file/><run_as_sudo>false</run_as_sudo><script/><agent_type>2</agent_type><script_type_windows/><environment/><agent_cluster/><elevate_user>false</elevate_user><exit_code_output/><name>SAP Event Monitor</name><exit_codes>0</exit_codes><exit_code_processing>1</exit_code_processing><create_console>false</create_console><related_items_node><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-20 07:28:33</sys_updated_on><boolean_value_type>1</boolean_value_type><required>true</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>04dca5812d27493989b0bd13f8b8fd93</sys_id><require_if_field_value/><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2017-08-07 09:35:50</sys_created_on><field_value/><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>SAP Credentials</label><int_field_max/><sequence>3</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>Credentials to connect to SAP via XBP3 RFC/XMI</hint><field_mapping>credentialField1</field_mapping><name>sapcred</name><field_regex/><field_type>5</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-13 09:08:46</sys_updated_on><boolean_value_type>1</boolean_value_type><required>true</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>0bab77da050f487db5286b3fc71fe56e</sys_id><require_if_field_value/><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2017-08-07 09:33:05</sys_created_on><field_value>100</field_value><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length>3</field_length><form_end_row>false</form_end_row><label>Client</label><int_field_max/><sequence>0</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>SAP Client Value (3 character)</hint><field_mapping>textField1</field_mapping><name>client</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2017-08-07 10:31:34</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>21f25161315042628735bc80936925bc</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:44:57</sys_created_on><field_value>N</field_value><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>Event Status to Select</label><int_field_max/><sequence>8</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>Specifies the event status of the events which should be read. N -NEW, C - CONFIRMED, A - Return events regardless of their status.</hint><field_mapping>choiceField1</field_mapping><name>select_state</name><field_regex/><field_type>4</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-20 07:28:29</sys_updated_on><boolean_value_type>1</boolean_value_type><required>true</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>24a7dab89b3f48f395d4051257056412</sys_id><require_if_field_value/><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2017-08-07 09:35:03</sys_created_on><field_value/><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>dest</label><int_field_max/><sequence>2</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>enter the destination (case sensitive) defined in sapnwrfc.ini</hint><field_mapping>textField3</field_mapping><name>ashost</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-21 10:22:41</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>33afd20a311342ffa155cb2c4cd1a6df</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2018-06-21 10:22:41</sys_created_on><field_value>/opt/universal/opscli/bin/</field_value><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>opsclidir</label><int_field_max/><sequence>15</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint/><field_mapping>textField10</field_mapping><name>opsclidir</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-21 02:21:10</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>3a9ad7342b0d4465b8c0f3a67bdd0a0b</sys_id><require_if_field_value/><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2018-06-21 02:21:10</sys_created_on><field_value>info</field_value><sys_created_by>nbuer</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>log level</label><int_field_max/><sequence>10</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>Loglevel of the usap -level trace|audit|info|warn|error</hint><field_mapping>choiceField3</field_mapping><name>level</name><field_regex/><field_type>4</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>true</form_start_row><sys_updated_on>2018-06-26 17:14:42</sys_updated_on><boolean_value_type>1</boolean_value_type><required>true</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>52bb21797949499699db83c89526906f</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:40:21</sys_created_on><field_value/><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>Event ID</label><int_field_max/><sequence>5</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>name of the event to select Note: For wildcards use the escape character: e.g. ua\* seraches for all events beginning with ua</hint><field_mapping>textField7</field_mapping><name>event_id</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-21 09:46:42</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>9aefae6d64fa4ac4863c5073703173e3</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2018-06-21 09:46:42</sys_created_on><field_value/><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>oms hostname</label><int_field_max/><sequence>13</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint/><field_mapping>textField8</field_mapping><name>omshost</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2017-08-07 09:47:54</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>9edb552a3d744eb6b90cf614ff39a1ab</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:47:54</sys_created_on><field_value>C</field_value><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>Confirm Events</label><int_field_max/><sequence>9</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>C - Sets the status of read events from NEW to CONFIRMED, N - Leaves the status of read events as NEW.</hint><field_mapping>choiceField2</field_mapping><name>creation_action</name><field_regex/><field_type>4</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>true</form_start_row><sys_updated_on>2018-06-27 14:14:57</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>b090712ed93a44f9903e2c2c1069ccab</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:39:52</sys_created_on><field_value/><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>Event Parameter</label><int_field_max/><sequence>6</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>Note: you can use the wildcard *</hint><field_mapping>textField6</field_mapping><name>event_para</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-20 07:28:37</sys_updated_on><boolean_value_type>1</boolean_value_type><required>true</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>c1c4224f25044fbfb25fcbc92d1ade5e</sys_id><require_if_field_value/><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2017-08-07 09:36:34</sys_created_on><field_value>/opt/universal/usap/bin</field_value><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>usapdir</label><int_field_max/><sequence>4</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>directory where the USAP bin directory is located e.g. "/opt/universal/usap/bin"</hint><field_mapping>textField5</field_mapping><name>usapdir</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-20 08:12:29</sys_updated_on><boolean_value_type>1</boolean_value_type><required>true</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>c9756830dd2641e78629c709f8f9565b</sys_id><require_if_field_value/><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2017-08-07 09:41:19</sys_created_on><field_value>10</field_value><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>Poll Intervall in seconds</label><int_field_max/><sequence>7</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint>intervall to poll the sap event history table in seconds</hint><field_mapping>textField2</field_mapping><name>poll</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-21 09:56:11</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>d1903aa0ae7a41929872bea49e784164</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2018-06-21 09:46:06</sys_created_on><field_value/><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>oms credentials</label><int_field_max/><sequence>12</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint/><field_mapping>credentialField2</field_mapping><name>omscred</name><field_regex/><field_type>5</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-21 10:01:50</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>d639ff50f676482195ef6ea77f05aaae</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2018-06-21 10:01:50</sys_created_on><field_value>7878</field_value><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>oms port</label><int_field_max/><sequence>14</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint/><field_mapping>textField9</field_mapping><name>omsport</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field action="INSERT_OR_UPDATE"><choice_sort_option>1</choice_sort_option><form_start_row>false</form_start_row><sys_updated_on>2018-06-21 08:34:05</sys_updated_on><boolean_value_type>1</boolean_value_type><required>false</required><field_mask/><boolean_no_value/><require_if_field/><sys_id>df06020ef4dc4cef91783f3ba6aded34</sys_id><require_if_field_value/><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2018-06-21 08:34:05</sys_created_on><field_value/><sys_created_by>ops.admin</sys_created_by><int_field_min/><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id><show_if_field/><boolean_yes_value/><form_col_span>1</form_col_span><field_length/><form_end_row>false</form_end_row><label>taskname</label><int_field_max/><sequence>11</sequence><show_if_field_value/><form_row_span>1</form_row_span><default_list_view>false</default_list_view><hint/><field_mapping>textField4</field_mapping><name>taskname</name><field_regex/><field_type>1</field_type></ops_unv_tmplt_field><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>21f25161315042628735bc80936925bc</field_id><use_field_value_for_label>false</use_field_value_for_label><sys_id>0004adb5caf54dbf9b659148db51486a</sys_id><sequence>2</sequence><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:46:03</sys_created_on><field_value_label>Any Status</field_value_label><field_value>A</field_value><sys_updated_on>2017-08-07 09:46:03</sys_updated_on><sys_created_by>ops.admin</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>21f25161315042628735bc80936925bc</field_id><use_field_value_for_label>false</use_field_value_for_label><sys_id>0e0def8ae566477fa9fbe75ec5744fe8</sys_id><sequence>1</sequence><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:45:51</sys_created_on><field_value_label>Confirmed</field_value_label><field_value>C</field_value><sys_updated_on>2017-08-07 09:45:51</sys_updated_on><sys_created_by>ops.admin</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>3a9ad7342b0d4465b8c0f3a67bdd0a0b</field_id><use_field_value_for_label>true</use_field_value_for_label><sys_id>32a5c23813ca493880fa1db72eda2171</sys_id><sequence>3</sequence><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2018-06-21 02:22:20</sys_created_on><field_value_label>warn</field_value_label><field_value>warn</field_value><sys_updated_on>2018-06-21 02:22:20</sys_updated_on><sys_created_by>nbuer</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>9edb552a3d744eb6b90cf614ff39a1ab</field_id><use_field_value_for_label>false</use_field_value_for_label><sys_id>578a500158b544a1b1a9b147d610e1e1</sys_id><sequence>0</sequence><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:48:19</sys_created_on><field_value_label>confirm events</field_value_label><field_value>C</field_value><sys_updated_on>2017-08-07 09:48:19</sys_updated_on><sys_created_by>ops.admin</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>9edb552a3d744eb6b90cf614ff39a1ab</field_id><use_field_value_for_label>false</use_field_value_for_label><sys_id>788e10bed1ee44afacb62c924d86dfd6</sys_id><sequence>1</sequence><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:48:39</sys_created_on><field_value_label>leave status as new</field_value_label><field_value>N</field_value><sys_updated_on>2017-08-07 09:48:39</sys_updated_on><sys_created_by>ops.admin</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>21f25161315042628735bc80936925bc</field_id><use_field_value_for_label>false</use_field_value_for_label><sys_id>8a628df6221c45c4bacd13c62fd69a6c</sys_id><sequence>0</sequence><sys_updated_by>ops.admin</sys_updated_by><sys_created_on>2017-08-07 09:45:40</sys_created_on><field_value_label>NEW</field_value_label><field_value>N</field_value><sys_updated_on>2017-08-07 09:45:40</sys_updated_on><sys_created_by>ops.admin</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>3a9ad7342b0d4465b8c0f3a67bdd0a0b</field_id><use_field_value_for_label>true</use_field_value_for_label><sys_id>8c94187143d24e15a2fdf7a62383dc54</sys_id><sequence>0</sequence><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2018-06-21 02:21:36</sys_created_on><field_value_label>info</field_value_label><field_value>info</field_value><sys_updated_on>2018-06-21 02:21:36</sys_updated_on><sys_created_by>nbuer</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>3a9ad7342b0d4465b8c0f3a67bdd0a0b</field_id><use_field_value_for_label>true</use_field_value_for_label><sys_id>a50ef3a38b5e426d80c86828bb0adc5c</sys_id><sequence>4</sequence><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2018-06-21 02:22:28</sys_created_on><field_value_label>error</field_value_label><field_value>error</field_value><sys_updated_on>2018-06-21 02:22:28</sys_updated_on><sys_created_by>nbuer</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>3a9ad7342b0d4465b8c0f3a67bdd0a0b</field_id><use_field_value_for_label>true</use_field_value_for_label><sys_id>a6a1aa3cb7904a68af17ab048ba068e1</sys_id><sequence>2</sequence><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2018-06-21 02:22:01</sys_created_on><field_value_label>audit</field_value_label><field_value>audit</field_value><sys_updated_on>2018-06-21 02:22:01</sys_updated_on><sys_created_by>nbuer</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice><ops_unv_tmplt_field_choice action="INSERT_OR_UPDATE"><field_id>3a9ad7342b0d4465b8c0f3a67bdd0a0b</field_id><use_field_value_for_label>true</use_field_value_for_label><sys_id>eb2ac39eb81f4a1f9497a148a4bcfd6e</sys_id><sequence>1</sequence><sys_updated_by>nbuer</sys_updated_by><sys_created_on>2018-06-21 02:21:49</sys_created_on><field_value_label>trace</field_value_label><field_value>trace</field_value><sys_updated_on>2018-06-21 02:21:49</sys_updated_on><sys_created_by>nbuer</sys_created_by><universal_template_id>9a99300322d44e29a33f85d2a7817191</universal_template_id></ops_unv_tmplt_field_choice></related_items_node></ops_unv_tmplt></unload>
